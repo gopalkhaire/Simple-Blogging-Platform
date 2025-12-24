@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal Blog Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>✍️ Minimal Blog Pro</h1>
+    <p>Share your thoughts beautifully</p>
+  </div>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<section class="top-bar">
+  <input type="text" id="search" placeholder="Search blogs...">
+  <span id="count"></span>
+</section>
+
+<section class="editor">
+  <input type="text" id="title" placeholder="Blog Title">
+  <input type="text" id="tag" placeholder="Tag (e.g. Tech, Life)">
+  <textarea id="content" placeholder="Write your blog here..."></textarea>
+  <button onclick="publishPost()">Publish</button>
+</section>
+
+<section class="posts" id="posts"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
